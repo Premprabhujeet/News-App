@@ -1,0 +1,212 @@
+/* General Navbar Styles */
+.navbar {
+  background: rgb(13, 13, 13);
+
+  padding: 15px 25px !important; /* Increased padding for better spacing */
+  font-size: 16px !important;
+  backdrop-filter: blur(10px); /* Add blur effect to the background */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Light border at the bottom */
+}
+
+/* Brand Logo and Title */
+.nav-brand {
+  font-size: 22px !important; /* Increased font size for prominence */
+  margin-left: 15px !important;
+  font-weight: 700 !important;
+  display: flex;
+  align-items: center;
+  color: #ffffff; /* Ensure text color is visible */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Add subtle text shadow */
+}
+
+.logo {
+  width: 50px !important; /* Adjusted logo size */
+  margin-right: 15px; /* Space between logo and title */
+}
+
+/* Navbar Items */
+.nav {
+  display: flex;
+  margin-left: 10px !important;
+  flex-grow: 1;
+}
+
+.nav-item {
+
+  margin-left: 15px !important;
+  transition: color 0.3s ease, transform 0.3s ease !important;
+}
+
+.nav-item:hover {
+  text-decoration-line: none;
+  color: #ffd700 !important; 
+  font-weight: 700;
+
+}
+
+/* Close Button */
+.close-btn {
+  color: #ffffff !important;
+  cursor: pointer !important;
+  margin-inline-end: 8px !important;
+}
+
+/* Search Form */
+.search-form {
+  display: flex !important;
+  align-items: center !important;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.form-input {
+  border-radius: 0 !important;
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+  padding: 10px !important;
+  margin-left: 10px !important;
+  font-size: 16px !important;
+  background-color: rgba(255, 255, 255, 0.8) !important; /* Slightly transparent background */
+  color: #333 !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important; /* Light border */
+}
+
+.form-input:focus {
+ 
+  border-color: #0c0d0d !important; /* Border color on focus */
+}
+
+/* Search Button */
+.search-btn {
+  background: linear-gradient(135deg, #ff5f6d, #ffc371) !important; /* Gradient background */
+  color: #0c0b0b !important;
+  font-weight: 700 !important;
+  border-radius: 0 !important;
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  padding: 10px 15px !important;
+  border-color: #ff5f6d !important;
+  font-size: 16px !important;
+  margin-right: 0 !important;
+  transition: background 0.3s ease, transform 0.3s ease !important;
+}
+
+.search-btn:hover {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b) !important; /* Darker gradient on hover */
+  transform: scale(1.05) !important; /* Slight scale effect on hover */
+}
+
+.search-btn:disabled {
+  background: linear-gradient(135deg, #ff5f6d, #ffc371) !important;
+}
+
+/* Dropdown Styles */
+.dropdown-toggle {
+  background: linear-gradient(135deg, #6a11cb, #2575fc) !important; /* Gradient background */
+  border: none !important;
+  color: white !important;
+  font-size: 16px !important;
+  padding: 0.75rem 1rem !important;
+  border-radius: 0.25rem !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+  transition: background 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.dropdown-toggle:hover {
+  background: linear-gradient(135deg, #4a00e0, #8e2de2) !important; /* Darker gradient on hover */
+}
+
+.dropdown-menu {
+  /* background: linear-gradient(135deg, #6a11cb, #2575fc) !important; */
+  background-color: #b2c0d9;
+  border: none !important;
+  border-radius: 0.25rem !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important;
+  min-width: 150px !important;
+  padding: 0.5rem 0 !important;
+  
+}
+
+.dropdown-item {
+  color: rgb(12, 11, 11) !important;
+  font-size: 0.875rem !important;
+  padding: 0.75rem 1rem !important;
+  /* transition: background 0.3s ease !important; */
+  border-radius: 0.25rem !important;
+}
+
+.dropdown-item:hover {
+  background-color: #4a00e0 !important; /*Purple background on hover */
+  color: white !important;
+  font-weight: 700;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .navbar {
+    padding: 15px 20px !important;
+  }
+
+  .nav-brand {
+    font-size: 20px !important;
+  }
+
+  .logo {
+    width: 35px !important;
+  }
+
+  .nav {
+    flex-direction: column;
+    margin-left: 0 !important;
+  }
+
+  .nav-item {
+    margin-left: 0 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .search-form {
+    margin: 10px 0 !important;
+    flex-direction: column;
+  }
+
+  .form-input {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+
+  .search-btn {
+    width: 100% !important;
+  }
+
+  .dropdown-toggle {
+    font-size: 14px !important;
+    padding: 0.5rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 15px !important;
+  }
+
+  .nav-brand {
+    font-size: 18px !important;
+  }
+
+  .logo {
+    width: 30px !important;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .form-input {
+    font-size: 14px !important;
+  }
+
+  .search-btn {
+    font-size: 14px !important;
+  }
+}
